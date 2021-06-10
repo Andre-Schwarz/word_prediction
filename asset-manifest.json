@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/word_prediction/static/css/main.6dea0f05.chunk.css",
+    "main.js": "/word_prediction/static/js/main.a6c10780.chunk.js",
+    "main.js.map": "/word_prediction/static/js/main.a6c10780.chunk.js.map",
+    "runtime-main.js": "/word_prediction/static/js/runtime-main.0cec73dd.js",
+    "runtime-main.js.map": "/word_prediction/static/js/runtime-main.0cec73dd.js.map",
+    "static/js/2.57b9eaef.chunk.js": "/word_prediction/static/js/2.57b9eaef.chunk.js",
+    "static/js/2.57b9eaef.chunk.js.map": "/word_prediction/static/js/2.57b9eaef.chunk.js.map",
+    "static/js/3.d012d191.chunk.js": "/word_prediction/static/js/3.d012d191.chunk.js",
+    "static/js/3.d012d191.chunk.js.map": "/word_prediction/static/js/3.d012d191.chunk.js.map",
+    "index.html": "/word_prediction/index.html",
+    "static/css/main.6dea0f05.chunk.css.map": "/word_prediction/static/css/main.6dea0f05.chunk.css.map",
+    "static/js/2.57b9eaef.chunk.js.LICENSE.txt": "/word_prediction/static/js/2.57b9eaef.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.0cec73dd.js",
+    "static/js/2.57b9eaef.chunk.js",
+    "static/css/main.6dea0f05.chunk.css",
+    "static/js/main.a6c10780.chunk.js"
+  ]
+}
