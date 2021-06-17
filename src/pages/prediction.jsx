@@ -15,19 +15,32 @@ import Typography from "@material-ui/core/Typography";
 import {Link} from "react-router-dom";
 import AppBar from "@material-ui/core/AppBar";
 import {makeStyles} from "@material-ui/core/styles";
+import * as tf from "@tensorflow/tfjs";
 
 function PredictionPage() {
 
     const userInputValueRef = useRef(0)
     const predictionValueRef = useRef()
 
+    const MODEL_URL = '../model/model.json'
+
     useEffect(() => {
-    })
+        tf.ready().then(() => {
+            loadModel(MODEL_URL)
+        });
+    }, [])
 
-
-
-
-
+    async function loadModel(url) {
+        try {
+            // const model = await tf.loadLayersModel(url);
+            const model = await tf.loadLayersModel(
+                'https://storage.googleapis.com/tfjs-models/tfjs/iris_v1/model.json');
+            model.summary();
+            console.log("Load model success")
+        } catch (err) {
+            console.log(err);
+        }
+    }
 
     const useStyles = makeStyles((theme) => ({
         root: {
@@ -97,7 +110,7 @@ function PredictionPage() {
         </AppBar>
 
         <div className={classes.content}>
-            <Button variant="contained" color="primary"  className={classes.funcButton}> Wert
+            <Button variant="contained" color="primary" className={classes.funcButton}> Wert
                 vorhersagen</Button>
             <div className={classes.horizontalImages}>
                 <TextField id="userInput" label="User Input" type="number" variant="outlined"
@@ -113,7 +126,7 @@ function PredictionPage() {
 
             </div>
 
-            <Button variant="primary"
+            <Button color="primary"
                     className={classes.funcButton}>Modellerstellung
                 neustarten</Button>
 
